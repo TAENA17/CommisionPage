@@ -1,0 +1,690 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>💕Pixel Commission Price💕</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="15bfe5cc-60e4-8062-9199-c66194949e20" class="page sans"><header><img class="page-cover-image" src="taenaoutro1.png" style="object-position:center 43.97%"/><h1 class="page-title"><strong>💕Pixel Commission Price💕</strong></h1><p class="page-description"></p></header><div class="page-body"><h1 id="15cfe5cc-60e4-8038-a5ef-e25a3e1fb1fe" class="">🎰 Slot 🎰</h1><p id="15cfe5cc-60e4-80a2-af30-d1f984afcf62" class=""><strong>December<br/><br/></strong>: ✅✅✅✅ — <mark class="highlight-red">Full</mark></p><p id="15cfe5cc-60e4-80fd-8bac-e41e3b0aec74" class=""><strong>January<br/><br/></strong>: ✅✅✅✅ — <mark class="highlight-red">Full</mark></p><p id="15cfe5cc-60e4-8054-ac7d-ea1ed62e3ac9" class=""><strong>February<br/><br/></strong>: ✅⬜⬜⬜ — 1 Filled, 3 Empty</p><h1 id="15cfe5cc-60e4-8014-9c25-e9be178b5865" class="">✉️ Contact ✉️</h1><p id="15cfe5cc-60e4-80ce-8e4e-c9c4ca9689d4" class="">🤖 <mark class="highlight-blue">Discord</mark>: <strong>nataeham</strong></p><p id="15cfe5cc-60e4-8020-a21b-f2d90a14d15f" class="">📧<mark class="highlight-red"> Email</mark><mark class="highlight-default">: </mark><strong>taenaking@gmail.com</strong></p><p id="15cfe5cc-60e4-803d-82c1-ee3b3861334c" class="">🐦 <mark class="highlight-purple">X</mark>: <strong>@Hahm_Taena</strong></p><h1 id="15bfe5cc-60e4-80f7-951c-f812c4e450cc" class="">💸 Price 💸</h1><table id="15bfe5cc-60e4-8017-8ec6-cd2a3caac0bf" class="simple-table"><tbody><tr id="15bfe5cc-60e4-8009-90a1-f079d64c6f4e"><td id="ZGT`" class="block-color-blue_background" style="width:379.9921875px"><strong>Category</strong></td><td id="s|sZ" class="block-color-blue_background"><strong>Price (USD)</strong></td></tr><tr id="15bfe5cc-60e4-80ba-837f-f687e1399d71"><td id="ZGT`" class="" style="width:379.9921875px">Simple SD Character (No motion)</td><td id="s|sZ" class="">$4.20</td></tr><tr id="15bfe5cc-60e4-80d0-b7d3-f03c11f427ca"><td id="ZGT`" class="" style="width:379.9921875px">Simple SD Character<br/>+ Simple Motion<br/></td><td id="s|sZ" class="">$12.60</td></tr><tr id="15bfe5cc-60e4-8011-8b12-c723403d3698"><td id="ZGT`" class="" style="width:379.9921875px">Simple SD Character<br/>+ Complex Motion<br/></td><td id="s|sZ" class="">$25.20</td></tr><tr id="15bfe5cc-60e4-8081-b3a5-d84ce6f40eca"><td id="ZGT`" class="" style="width:379.9921875px">SD Character (No motion)</td><td id="s|sZ" class="">$12.60</td></tr><tr id="15bfe5cc-60e4-8055-81dc-e50a5f5fff1a"><td id="ZGT`" class="" style="width:379.9921875px">SD Character<br/>+ Simple Motion<br/></td><td id="s|sZ" class="">$25.20</td></tr><tr id="15bfe5cc-60e4-8059-bbc3-ccf0457a2ba4"><td id="ZGT`" class="" style="width:379.9921875px">SD Character <br/>+ Complex Motion<br/></td><td id="s|sZ" class="">$42.00</td></tr><tr id="15bfe5cc-60e4-802b-8fd8-ccac49ef9d05"><td id="ZGT`" class="" style="width:379.9921875px">LD Character (No motion)</td><td id="s|sZ" class="">$33.60</td></tr><tr id="15bfe5cc-60e4-802f-b86d-f8fa87ac94f3"><td id="ZGT`" class="" style="width:379.9921875px">LD Character<br/>+ Simple Motion<br/></td><td id="s|sZ" class="">$50.40</td></tr><tr id="15bfe5cc-60e4-807f-9d76-c021294912bb"><td id="ZGT`" class="" style="width:379.9921875px">LD Character <br/>+ Complex Motion<br/></td><td id="s|sZ" class="">$63.00</td></tr><tr id="15bfe5cc-60e4-803b-afb3-ed87cb7ffaf8"><td id="ZGT`" class="" style="width:379.9921875px">Full-Screen Background (Character price not included)</td><td id="s|sZ" class="">$105.00</td></tr><tr id="15bfe5cc-60e4-808c-80de-caadb6da6649"><td id="ZGT`" class="" style="width:379.9921875px">Add Background Animation</td><td id="s|sZ" class="">$28.00</td></tr><tr id="15bfe5cc-60e4-800d-8817-ec871c563f3e"><td id="ZGT`" class="" style="width:379.9921875px">Simple Cursor (No motion)</td><td id="s|sZ" class="">$14.00</td></tr><tr id="15bfe5cc-60e4-801e-b3fd-f6c8264da843"><td id="ZGT`" class="" style="width:379.9921875px"><mark class="highlight-gray">+ Simple Motion Cursor</mark></td><td id="s|sZ" class=""><mark class="highlight-gray">$7.00</mark></td></tr><tr id="15bfe5cc-60e4-80f5-89d2-c61ede991f87"><td id="ZGT`" class="" style="width:379.9921875px">Simple Cursor Set (11 types, price varies for motion)</td><td id="s|sZ" class="">$70.00</td></tr><tr id="15bfe5cc-60e4-807f-bfde-cc83fc0e946c"><td id="ZGT`" class="" style="width:379.9921875px">Character Cursor (No motion)</td><td id="s|sZ" class="">$21.00</td></tr><tr id="15bfe5cc-60e4-80cc-a145-f3ba9cb935c0"><td id="ZGT`" class="" style="width:379.9921875px"><mark class="highlight-gray">+ SD Character Cursor Motion</mark></td><td id="s|sZ" class=""><mark class="highlight-gray">$14.00</mark></td></tr><tr id="15bfe5cc-60e4-8034-ba83-f59bd0dab0ee"><td id="ZGT`" class="" style="width:379.9921875px">SD Character Cursor Set (11 types, price varies for motion)</td><td id="s|sZ" class="">$140.00</td></tr></tbody></table><h1 id="15bfe5cc-60e4-805f-9037-ef523bf1c3e3" class="">🖼️ Examples 🖼️</h1><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="15cfe5cc-60e4-8039-b8e5-d9d8f21404f1"><div style="font-size:1.5em"><span class="icon">⚠️</span></div><div style="width:100%"><blockquote id="15cfe5cc-60e4-80db-a425-d0ba1c11a3b7" class=""><em><mark class="highlight-yellow">You can click the triangle next to the category to expand or collapse it.</mark></em></blockquote></div></figure><ul id="15bfe5cc-60e4-80ed-9825-c2494723d27a" class="toggle"><li><details open=""><summary><strong>Simple SD Character + Simple Motion</strong></summary><figure id="15bfe5cc-60e4-8052-be23-ddaa17c3c0a4" class="image" style="text-align:left"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTY0/MDAxNzI0Njg0NjQ5ODI5.Rb3CeDjR8RHm4TqM_4UwdsiT3xGwzoDH7qnELrGg_x4g.Whr71xHmOnjFmNxu_-2eDgRm3QUYRksUCt_2Ig-Zcy0g.GIF/17246719810.gif?type=w1"><img style="width:384px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTY0/MDAxNzI0Njg0NjQ5ODI5.Rb3CeDjR8RHm4TqM_4UwdsiT3xGwzoDH7qnELrGg_x4g.Whr71xHmOnjFmNxu_-2eDgRm3QUYRksUCt_2Ig-Zcy0g.GIF/17246719810.gif?type=w1"/></a></figure><p id="15cfe5cc-60e4-8096-a29b-c7417a150c8d" class="">
+</p></details></li></ul><ul id="15bfe5cc-60e4-8046-8b1b-d89e827e4548" class="toggle"><li><details open=""><summary><strong>Simple SD Character + Complex Motion</strong></summary><div id="6c575985-f573-47b9-8793-09bdca5aa6dd" class="column-list"><div id="8cb09c56-6617-4bc5-a5c5-1c1ec6d40ddc" style="width:18.75%" class="column"><figure id="69019cf5-4c00-4056-96f4-10f0524a4617" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfNjgg/MDAxNzI0Njg0NTIzOTI1.j0kFnz_mXxLbpmn94pOk8c1P6XDHFk1NC3YIMDlFsUMg.r0fCfMYik3VJyVxfThUp8NxaId3tzTCWZsqiPSRxdqYg.GIF/17246704450.gif?type=w1"><img style="width:144px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfNjgg/MDAxNzI0Njg0NTIzOTI1.j0kFnz_mXxLbpmn94pOk8c1P6XDHFk1NC3YIMDlFsUMg.r0fCfMYik3VJyVxfThUp8NxaId3tzTCWZsqiPSRxdqYg.GIF/17246704450.gif?type=w1"/></a></figure></div><div id="15cfe5cc-60e4-804f-a968-f332d6112862" style="width:81.25%" class="column"><figure id="67e9f2f7-5c23-4289-aa99-fbd959a5f857" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMjMz/MDAxNzI0Njg0NTAzODI1.XTQ0z0M0HVFV26ghqA2qxruH9ae4g3RYcoAecBHCo3gg.DM0G5x3rAshlP3MT8VTZYIeUsVKlR-dxoc6yz6Hzz8Qg.GIF/17246706790.gif?type=w1"><img style="width:120px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMjMz/MDAxNzI0Njg0NTAzODI1.XTQ0z0M0HVFV26ghqA2qxruH9ae4g3RYcoAecBHCo3gg.DM0G5x3rAshlP3MT8VTZYIeUsVKlR-dxoc6yz6Hzz8Qg.GIF/17246706790.gif?type=w1"/></a></figure></div></div><div id="a2d24d04-78f0-43a1-8219-35f26413a760" class="column-list"><div id="15cfe5cc-60e4-8085-a39a-ecbe1ccf09e4" style="width:18.75%" class="column"><figure id="1bca47d7-2853-42cc-83f4-1c3b87749e9d" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTg4/MDAxNzI0Njg0NjA5MjEw.8Xv4L6qxT_TeEu2o6oOccm4eTKgX4a3D9Oe3XiJiCgog.-il1EzOKUdoYanjemz2l_tj8PdUozwwGImZ-M9Rbjiog.GIF/17246705380.gif?type=w1"><img style="width:96px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTg4/MDAxNzI0Njg0NjA5MjEw.8Xv4L6qxT_TeEu2o6oOccm4eTKgX4a3D9Oe3XiJiCgog.-il1EzOKUdoYanjemz2l_tj8PdUozwwGImZ-M9Rbjiog.GIF/17246705380.gif?type=w1"/></a></figure></div><div id="4b16c21e-8526-44a4-945c-38d89dc966ad" style="width:81.25000000000003%" class="column"><figure id="f3126fb5-20f9-4edf-9a25-44745b54c1c0" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfNjgg/MDAxNzI0Njg0NjAzMjU1.HXcbRlriLz5Nv8-ut844yw6yWqNBED76peM05N1CANsg.I5I4a3T0ORiUXqA5RijnoXnocJrNDP_o9v6WFJthnzwg.GIF/17246704010.gif?type=w1"><img style="width:120px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfNjgg/MDAxNzI0Njg0NjAzMjU1.HXcbRlriLz5Nv8-ut844yw6yWqNBED76peM05N1CANsg.I5I4a3T0ORiUXqA5RijnoXnocJrNDP_o9v6WFJthnzwg.GIF/17246704010.gif?type=w1"/></a></figure></div></div><figure id="15cfe5cc-60e4-80e5-8920-f1bd78f62286" class="image"><a href="run1.gif"><img style="width:288px" src="run1.gif"/></a></figure></details></li></ul><ul id="15bfe5cc-60e4-8045-bf9b-f86d146bbb33" class="toggle"><li><details open=""><summary><strong>SD Character (No motion)</strong></summary><div id="15cfe5cc-60e4-8008-8cf8-d7aff8a56947" class="column-list"><div id="15cfe5cc-60e4-809b-858b-ed5fa756b5da" style="width:31.25%" class="column"><figure id="15bfe5cc-60e4-8072-b350-fa229fc05729" class="image"><a href="korone.gif"><img style="width:240px" src="korone.gif"/></a></figure></div><div id="15cfe5cc-60e4-8076-91e2-d438b499b0b8" style="width:68.75%" class="column"><figure id="15bfe5cc-60e4-8015-94ac-f97ab90ebf63" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfNDMg/MDAxNzI0Njg0ODAzMTEx.2kxD3GKCC1b007u5c9J9N4kr2bw9jEX6JjwEoFhlp1Ag.Mh_oTkCVZnoJurUqWvHCnDylI6Hz05dm2rjfl6cToFEg.JPEG/17246722700_Re.jpg?type=w1"><img style="width:192px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfNDMg/MDAxNzI0Njg0ODAzMTEx.2kxD3GKCC1b007u5c9J9N4kr2bw9jEX6JjwEoFhlp1Ag.Mh_oTkCVZnoJurUqWvHCnDylI6Hz05dm2rjfl6cToFEg.JPEG/17246722700_Re.jpg?type=w1"/></a></figure></div></div><div id="15cfe5cc-60e4-8021-81b8-cbb7820a98ce" class="column-list"><div id="15cfe5cc-60e4-8030-b5bc-f0ec0d381db4" style="width:31.25%" class="column"><figure id="15bfe5cc-60e4-805a-b1ba-df35be2ae5e4" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTk5/MDAxNzI0Njg0ODAzMTEw.p2FFkOhExna3in4jbkd86br-DWCzBalFJzmHCFc2Ro4g.XJ3Ep7rEFJt6xMwLwRVozKSdq2s0lZwQbZXO5f6iGEYg.JPEG/17246722770_Re.jpg?type=w1"><img style="width:192px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTk5/MDAxNzI0Njg0ODAzMTEw.p2FFkOhExna3in4jbkd86br-DWCzBalFJzmHCFc2Ro4g.XJ3Ep7rEFJt6xMwLwRVozKSdq2s0lZwQbZXO5f6iGEYg.JPEG/17246722770_Re.jpg?type=w1"/></a></figure></div><div id="15cfe5cc-60e4-8060-9ec3-c656383f4ae2" style="width:68.75%" class="column"><figure id="15bfe5cc-60e4-806a-88ea-f8c6de4cde44" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTE2/MDAxNzI0Njg0ODAzMTEx.Th2A-e60SnmjAOfSUvyC34NPSX734h3ZGX2I-k3_RoAg.ZvLw3D0fpSj9GNwTLoSNssiY3811iq0ih033v6Z5Ro8g.JPEG/17246722820_Re.jpg?type=w1"><img style="width:192px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTE2/MDAxNzI0Njg0ODAzMTEx.Th2A-e60SnmjAOfSUvyC34NPSX734h3ZGX2I-k3_RoAg.ZvLw3D0fpSj9GNwTLoSNssiY3811iq0ih033v6Z5Ro8g.JPEG/17246722820_Re.jpg?type=w1"/></a></figure></div></div></details></li></ul><ul id="15bfe5cc-60e4-8001-897b-c2ed210f6f32" class="toggle"><li><details open=""><summary><strong>SD Character + Simple Motion</strong></summary><div id="15bfe5cc-60e4-802c-b9d6-f25e1162f210" class="column-list"><div id="15bfe5cc-60e4-8061-8373-e7b91655defe" style="width:25%" class="column"><figure id="15bfe5cc-60e4-8004-92fb-d565c57d2762" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfNjIg/MDAxNzI0Njg0OTU0OTYw.LNYC7POdWW1r9PEYRQiVfjfME5fWlLFyJNnyqfCdkxwg.vrDXLFLlonuMGUeAQNNJUAs8xVNSCHdkvaPD4JI2iOMg.GIF/17246731610.gif?type=w1"><img style="width:192px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfNjIg/MDAxNzI0Njg0OTU0OTYw.LNYC7POdWW1r9PEYRQiVfjfME5fWlLFyJNnyqfCdkxwg.vrDXLFLlonuMGUeAQNNJUAs8xVNSCHdkvaPD4JI2iOMg.GIF/17246731610.gif?type=w1"/></a></figure></div><div id="15bfe5cc-60e4-80a4-83a4-d4932aa70251" style="width:20.833333333333332%" class="column"><figure id="15bfe5cc-60e4-80ac-bdfb-d0add8b41dc1" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMzgg/MDAxNzI0Njg0OTU0OTU3.jmbwq9iOLfPlyRoFAU1lQ-zpRLxN88a_1Q7s9o8V0v0g.DY02wPmPY8se0B9ZSsI-yMHUZo2KVZfo9ijLcgZ1zaUg.GIF/17246745930.gif?type=w1"><img style="width:132px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMzgg/MDAxNzI0Njg0OTU0OTU3.jmbwq9iOLfPlyRoFAU1lQ-zpRLxN88a_1Q7s9o8V0v0g.DY02wPmPY8se0B9ZSsI-yMHUZo2KVZfo9ijLcgZ1zaUg.GIF/17246745930.gif?type=w1"/></a></figure></div><div id="15bfe5cc-60e4-8042-926a-ce9ee533165d" style="width:54.1666666666667%" class="column"><figure id="15bfe5cc-60e4-80da-9746-c0e0c8482834" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfOTAg/MDAxNzI0Njg0OTU0OTcw.k82UbHKMaIS97tmVu3sBL1juyFmhiz-1vMTrPe8Krf8g.IlhqFDc3th8sUc9iVSVfQMall6NLVjgpL-jbCnQBeJgg.GIF/17246746170.gif?type=w1"><img style="width:144px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfOTAg/MDAxNzI0Njg0OTU0OTcw.k82UbHKMaIS97tmVu3sBL1juyFmhiz-1vMTrPe8Krf8g.IlhqFDc3th8sUc9iVSVfQMall6NLVjgpL-jbCnQBeJgg.GIF/17246746170.gif?type=w1"/></a></figure></div></div><div id="15cfe5cc-60e4-8067-8c82-f04b465e9829" class="column-list"><div id="15cfe5cc-60e4-80ca-8464-e098b89e2519" style="width:43.75%" class="column"><figure id="15cfe5cc-60e4-803e-8c08-f0bf27fc87f5" class="image"><a href="cheesethrow.gif"><img style="width:336px" src="cheesethrow.gif"/></a></figure></div><div id="15cfe5cc-60e4-80fa-8322-d78090d0fae9" style="width:56.25%" class="column"><figure id="15cfe5cc-60e4-8032-b18f-c8e4a5cffebc" class="image"><a href="movie.gif"><img style="width:240px" src="movie.gif"/></a></figure></div></div></details></li></ul><ul id="15bfe5cc-60e4-806a-832d-fb92840b9720" class="toggle"><li><details open=""><summary><strong>SD Character + Complex Motion</strong></summary><div id="15cfe5cc-60e4-800c-9505-f8794d0e1c7d" class="column-list"><div id="15cfe5cc-60e4-80be-a6d6-e217ace5be01" style="width:37.5%" class="column"><figure id="15bfe5cc-60e4-8051-a4c9-f2ac41af9526" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTU0/MDAxNzI0Njg1MjU3MDA3.suIU4OWBcrzohwGaM5GU3lkrpUXGelkicTXfnuZ7fSsg.TzphcGq7Zhll0gfD8U1bO-nX1QTeFOa6KykZppoylnEg.GIF/1610589135.gif?type=w1"><img style="width:447.99505615234375px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTU0/MDAxNzI0Njg1MjU3MDA3.suIU4OWBcrzohwGaM5GU3lkrpUXGelkicTXfnuZ7fSsg.TzphcGq7Zhll0gfD8U1bO-nX1QTeFOa6KykZppoylnEg.GIF/1610589135.gif?type=w1"/></a></figure></div><div id="15cfe5cc-60e4-80a1-9ebd-f9016731a04e" style="width:62.5%" class="column"><figure id="15bfe5cc-60e4-8016-9327-e966376730b7" class="image" style="text-align:left"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTEw/MDAxNzI0Njg1MjU2OTk0.k86hPD4aS8rGyQBOPQyEf58zs9THbLVNfzy_syykcPsg.MICrpR7hWJ2iLlYPWTyiwEhcvpCJsY7k9z42CnWHp6Eg.GIF/1610589285.gif?type=w1"><img style="width:240px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTEw/MDAxNzI0Njg1MjU2OTk0.k86hPD4aS8rGyQBOPQyEf58zs9THbLVNfzy_syykcPsg.MICrpR7hWJ2iLlYPWTyiwEhcvpCJsY7k9z42CnWHp6Eg.GIF/1610589285.gif?type=w1"/></a></figure></div></div><div id="15cfe5cc-60e4-808d-a60f-d39be1fdb15f" class="column-list"><div id="15cfe5cc-60e4-80e6-bbfa-c608e4ea15be" style="width:37.5%" class="column"><figure id="15bfe5cc-60e4-808d-b880-d240191f51cf" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTE0/MDAxNzI0Njg1MzA1NzE2.1uDf0L-NqXLwZ100t8l4dFQp3cWjRmfohLhstaF-muUg.UlXdzzm6eJ3UMxrEsC_QsBGHjhSleqbJH7A16pEVxPog.GIF/16624600460.gif?type=w1"><img style="width:288px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTE0/MDAxNzI0Njg1MzA1NzE2.1uDf0L-NqXLwZ100t8l4dFQp3cWjRmfohLhstaF-muUg.UlXdzzm6eJ3UMxrEsC_QsBGHjhSleqbJH7A16pEVxPog.GIF/16624600460.gif?type=w1"/></a></figure></div><div id="15cfe5cc-60e4-8023-b114-f842ccde540c" style="width:62.5%" class="column"><figure id="15bfe5cc-60e4-8094-bb7c-e10d90a3c77a" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMjE1/MDAxNzI0Njg1MzA1NTI1.5xYxogQPtFlve5wUuAy9qu76SvV8H-S7rdz6_yvAFnwg.NFVjTGH0PBoh_QWjy5S9k7Og5GT67Nx8y2j3RgN2z7gg.GIF/17246805330.gif?type=w1"><img style="width:192px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMjE1/MDAxNzI0Njg1MzA1NTI1.5xYxogQPtFlve5wUuAy9qu76SvV8H-S7rdz6_yvAFnwg.NFVjTGH0PBoh_QWjy5S9k7Og5GT67Nx8y2j3RgN2z7gg.GIF/17246805330.gif?type=w1"/></a></figure></div></div><div id="15cfe5cc-60e4-8074-a9e0-cb747844efb5" class="column-list"><div id="15cfe5cc-60e4-8010-8500-de917d9ed8e6" style="width:31.25%" class="column"><figure id="15bfe5cc-60e4-8014-87c8-f9b7bd1eca53" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMjIx/MDAxNzI0Njg1MzMyMjYz.zxt4fwdIBnUpcD6-v2YCJSDwBPurHuJnEoQEctO6zkAg.KC5Fp9xwZZm57fcdNvP-yIKSXobnOmlXMdmFAbKxjiYg.GIF/17246739310.gif?type=w1"><img style="width:288px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMjIx/MDAxNzI0Njg1MzMyMjYz.zxt4fwdIBnUpcD6-v2YCJSDwBPurHuJnEoQEctO6zkAg.KC5Fp9xwZZm57fcdNvP-yIKSXobnOmlXMdmFAbKxjiYg.GIF/17246739310.gif?type=w1"/></a></figure><p id="15cfe5cc-60e4-80b7-b51e-fcc936119c3d" class="">
+</p></div><div id="15cfe5cc-60e4-8091-8ea7-dbdaa38d7707" style="width:68.75%" class="column"><figure id="15bfe5cc-60e4-80b1-b45d-c217b144aacd" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfNyAg/MDAxNzI0Njg1Mjk1OTg3.kb55TtPqx9-sYh5UaNtYFol7g1-RSAKgaXUyJNSjgEgg.2cVdKjUE0LkhYiEdKDHGpX5qBSHCictEymtImdBQvsUg.GIF/16282286460.gif?type=w1"><img style="width:288px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfNyAg/MDAxNzI0Njg1Mjk1OTg3.kb55TtPqx9-sYh5UaNtYFol7g1-RSAKgaXUyJNSjgEgg.2cVdKjUE0LkhYiEdKDHGpX5qBSHCictEymtImdBQvsUg.GIF/16282286460.gif?type=w1"/></a></figure><figure id="15bfe5cc-60e4-8006-8eb6-d240bb422297" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTA0/MDAxNzI0Njg1MzMyMTI2.nzTEE9B8R6Lp_9JNjjN3LnQK-ra0wvS6hJG4yRnq6c8g.Oaj9twa4Evb4FQDjKGsU0ZmIi-yagy5K1knVEIwVkOAg.GIF/17246771550.gif?type=w1"><img style="width:240px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTA0/MDAxNzI0Njg1MzMyMTI2.nzTEE9B8R6Lp_9JNjjN3LnQK-ra0wvS6hJG4yRnq6c8g.Oaj9twa4Evb4FQDjKGsU0ZmIi-yagy5K1knVEIwVkOAg.GIF/17246771550.gif?type=w1"/></a></figure></div></div><figure id="15bfe5cc-60e4-80f8-ba42-f1f3929c9822" class="image"><a href="https://blogfiles.pstatic.net/MjAyMjA5MDZfMjI4/MDAxNjYyNDY0NjE1NzAy.yB9Lbp0ahkzHtwufzelQtn0vNQq5D9mzDEgqU9KluOIg.O_w-VgXHRUKPW-ZjRKJVvvnShNIs8wJGQrw1xl7dU0kg.GIF.taena17/MOMIJI.gif?type=w1"><img style="width:528px" src="https://blogfiles.pstatic.net/MjAyMjA5MDZfMjI4/MDAxNjYyNDY0NjE1NzAy.yB9Lbp0ahkzHtwufzelQtn0vNQq5D9mzDEgqU9KluOIg.O_w-VgXHRUKPW-ZjRKJVvvnShNIs8wJGQrw1xl7dU0kg.GIF.taena17/MOMIJI.gif?type=w1"/></a></figure></details></li></ul><ul id="15bfe5cc-60e4-8020-89ef-d0f6cb9fe65d" class="toggle"><li><details open=""><summary><strong>LD Character + Simple Motion</strong></summary><figure id="15bfe5cc-60e4-802b-9fe0-d54e75c7ac57" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMjk3/MDAxNzI0Njg1NTIzNzQy.USMM4Iafr_QOyRaj7_vIpBpxyfKndwKAoNDQcp12nm4g.aGLxLMrWoJeuUxTpDq6exL1jscZao8JiO37Hde1kNMUg.GIF/17246738990.gif?type=w1"><img style="width:432px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMjk3/MDAxNzI0Njg1NTIzNzQy.USMM4Iafr_QOyRaj7_vIpBpxyfKndwKAoNDQcp12nm4g.aGLxLMrWoJeuUxTpDq6exL1jscZao8JiO37Hde1kNMUg.GIF/17246738990.gif?type=w1"/></a></figure><figure id="15bfe5cc-60e4-805a-86d9-e29f94c20444" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfNDQg/MDAxNzI0Njg1NTIzNzgx.mYUOyiGzNsohQDYSQT8ezpXr4SfsvKeWjVrH52oXqgIg.iUi24MsdcBkhy2L8io4HiiH3PPPsoQrQrD98jYb2dBUg.GIF/17246803550.gif?type=w1"><img style="width:432px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfNDQg/MDAxNzI0Njg1NTIzNzgx.mYUOyiGzNsohQDYSQT8ezpXr4SfsvKeWjVrH52oXqgIg.iUi24MsdcBkhy2L8io4HiiH3PPPsoQrQrD98jYb2dBUg.GIF/17246803550.gif?type=w1"/></a></figure><figure id="15bfe5cc-60e4-80a1-bbc5-e4ec243d056c" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMzAw/MDAxNzI0Njg1NTIzOTE5.DSQnO0I7UVi-yXgXh-fMS4gT2w7GrtfqThvT3XTK_Aog.-h1nXlVQ4ZWuE00K8x2qkI7HbSZS1MZH2uNtdsIKbNIg.GIF/17246740080.gif?type=w1"><img style="width:391.9970703125px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMzAw/MDAxNzI0Njg1NTIzOTE5.DSQnO0I7UVi-yXgXh-fMS4gT2w7GrtfqThvT3XTK_Aog.-h1nXlVQ4ZWuE00K8x2qkI7HbSZS1MZH2uNtdsIKbNIg.GIF/17246740080.gif?type=w1"/></a></figure></details></li></ul><ul id="15bfe5cc-60e4-80d0-b7d1-f0e9124e4a88" class="toggle"><li><details open=""><summary><strong>LD Character + Complex Motion</strong></summary><div id="15cfe5cc-60e4-8082-9bb7-d1241942ccd9" class="column-list"><div id="15cfe5cc-60e4-80f1-a375-d4f6e3493a22" style="width:43.75%" class="column"><figure id="15bfe5cc-60e4-805b-b527-db31b604f98e" class="image"><a href="https://blogfiles.pstatic.net/MjAyMjA5MDZfNTgg/MDAxNjYyNDY0Njc0MDcy.6LXoUI8bENI-neeKe8j8iYhmhTNKDYKElvsaNzL32LYg.DZs2D6MiqSFPmzrhLlqKMrSWAGn2Y5qcZxCQ84EneQcg.GIF.taena17/hi.gif?type=w1"><img style="width:336px" src="https://blogfiles.pstatic.net/MjAyMjA5MDZfNTgg/MDAxNjYyNDY0Njc0MDcy.6LXoUI8bENI-neeKe8j8iYhmhTNKDYKElvsaNzL32LYg.DZs2D6MiqSFPmzrhLlqKMrSWAGn2Y5qcZxCQ84EneQcg.GIF.taena17/hi.gif?type=w1"/></a></figure></div><div id="15cfe5cc-60e4-806a-907d-c1805e5e15fd" style="width:56.25%" class="column"><figure id="15bfe5cc-60e4-80b1-9e74-de573e2246b2" class="image"><a href="https://blogfiles.pstatic.net/MjAyMjA5MDZfMTI5/MDAxNjYyNDY0Njg3MTE2.91qVZ3SXnzs9mrFhDnutAXcCnmsSAXUFtD8DqT4Umo0g.jHJ0cjjQ26SWQ--U4Zu3-4pxvr7LNoXhdwSY4icHKQIg.GIF.taena17/toon100000.gif?type=w1"><img style="width:288px" src="https://blogfiles.pstatic.net/MjAyMjA5MDZfMTI5/MDAxNjYyNDY0Njg3MTE2.91qVZ3SXnzs9mrFhDnutAXcCnmsSAXUFtD8DqT4Umo0g.jHJ0cjjQ26SWQ--U4Zu3-4pxvr7LNoXhdwSY4icHKQIg.GIF.taena17/toon100000.gif?type=w1"/></a></figure></div></div><figure id="15bfe5cc-60e4-8066-9513-cf8d91584855" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfODEg/MDAxNzI0Njg1ODQxNzY2.vmGW5ik8xOPhr3zLE1VZpAzyfLcrcNw6ojJSXZ5zndgg.vY1mD4RlVXeuvisvSpDFkmkTTMqo-ZmtR3SXE774xo8g.GIF/17246745260.gif?type=w1"><img style="width:528px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfODEg/MDAxNzI0Njg1ODQxNzY2.vmGW5ik8xOPhr3zLE1VZpAzyfLcrcNw6ojJSXZ5zndgg.vY1mD4RlVXeuvisvSpDFkmkTTMqo-ZmtR3SXE774xo8g.GIF/17246745260.gif?type=w1"/></a></figure><figure id="15bfe5cc-60e4-8026-ba71-fdd0b996f5be" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMjIw/MDAxNzI0Njg1ODQxNjAy.fF3Z5gK7wFIyFJqk0A9S9vcoGKM9vxy2Aze_Li7BL0Ig.mpmJFQHeDIYpIHIa_urJmuBSW3YZYeaJuV0vd5SvCRIg.GIF/17246778160.gif?type=w1"><img style="width:672px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMjIw/MDAxNzI0Njg1ODQxNjAy.fF3Z5gK7wFIyFJqk0A9S9vcoGKM9vxy2Aze_Li7BL0Ig.mpmJFQHeDIYpIHIa_urJmuBSW3YZYeaJuV0vd5SvCRIg.GIF/17246778160.gif?type=w1"/></a></figure><div id="15cfe5cc-60e4-8046-9cf7-db6b94888f63" class="column-list"><div id="15cfe5cc-60e4-8042-a6b8-cf747824a047" style="width:31.25%" class="column"><figure id="15bfe5cc-60e4-80c7-b7d2-c1d5dd778db7" class="image"><a href="https://blogfiles.pstatic.net/MjAyMjA5MDZfOTkg/MDAxNjYyNDY0NzIwMTQ0.QVXrMdcmkcx83NtpXcaOy8crkj1X8vSHn5e82uDmPCog.Qs1pkLgW7ESRxcii5satTwaL-aXdBsVsLZ0oW6zSo3Eg.GIF.taena17/nekomimi_.gif?type=w1"><img style="width:240px" src="https://blogfiles.pstatic.net/MjAyMjA5MDZfOTkg/MDAxNjYyNDY0NzIwMTQ0.QVXrMdcmkcx83NtpXcaOy8crkj1X8vSHn5e82uDmPCog.Qs1pkLgW7ESRxcii5satTwaL-aXdBsVsLZ0oW6zSo3Eg.GIF.taena17/nekomimi_.gif?type=w1"/></a></figure></div><div id="15cfe5cc-60e4-802c-a0fe-c72d63e1cf7d" style="width:68.75%" class="column"><figure id="15bfe5cc-60e4-80e5-9483-ec4c8344f8ab" class="image"><a href="https://blogfiles.pstatic.net/MjAyMjA5MDZfMTg2/MDAxNjYyNDY0NzQ5NTgy.6u10_K2QEj2s6-vdpeSpxIiffMtrc_QfsrAE1u7GS8Yg.ECpZ5D6ZCvHrlHevljkLjSL1MbE1n-cqV4-7T_kZHJQg.GIF.taena17/candyseller200.gif?type=w1"><img style="width:480px" src="https://blogfiles.pstatic.net/MjAyMjA5MDZfMTg2/MDAxNjYyNDY0NzQ5NTgy.6u10_K2QEj2s6-vdpeSpxIiffMtrc_QfsrAE1u7GS8Yg.ECpZ5D6ZCvHrlHevljkLjSL1MbE1n-cqV4-7T_kZHJQg.GIF.taena17/candyseller200.gif?type=w1"/></a></figure></div></div></details></li></ul><ul id="15bfe5cc-60e4-803d-bb3f-df35bace9c7e" class="toggle"><li><details open=""><summary><strong>SD Character + Full-Screen Background</strong></summary><figure id="15cfe5cc-60e4-802a-a0c5-c28ae1e289ef"><div class="source"><a href="https://www.youtube.com/embed/JWgYldw3zqw?si=j28TL6P1FH4wftrg">https://www.youtube.com/embed/JWgYldw3zqw?si=j28TL6P1FH4wftrg</a></div></figure><figure id="15cfe5cc-60e4-80e0-8cdb-fcfedce4de55"><div class="source"><a href="https://www.youtube.com/embed/P64Wl4IFtvU?si=_TseqkLmTKzbx951">https://www.youtube.com/embed/P64Wl4IFtvU?si=_TseqkLmTKzbx951</a></div></figure><figure id="15cfe5cc-60e4-807c-b91b-e4b8f46cb696"><div class="source"><a href="https://www.youtube.com/embed/gnxaJGt0U68?si=iB66jl0MPnMerK1V">https://www.youtube.com/embed/gnxaJGt0U68?si=iB66jl0MPnMerK1V</a></div></figure></details></li></ul><ul id="15bfe5cc-60e4-80bd-9e5d-f7ce961af1b4" class="toggle"><li><details open=""><summary><strong>LD Character + Full-Screen Background</strong></summary><figure id="15cfe5cc-60e4-80f5-98f0-fd6a1647fa6f"><div class="source"><a href="https://www.youtube.com/embed/0tqcZxYXKBI?si=13Ra0niateyhLqPu">https://www.youtube.com/embed/0tqcZxYXKBI?si=13Ra0niateyhLqPu</a></div></figure><figure id="15cfe5cc-60e4-8044-89cd-ecc3600c588f"><div class="source"><a href="https://www.youtube.com/embed/cBrss4zhVLk?si=yXfMKHBjp8I0_7Qc">https://www.youtube.com/embed/cBrss4zhVLk?si=yXfMKHBjp8I0_7Qc</a></div></figure><figure id="15cfe5cc-60e4-803c-8409-d8b1abf48a3b"><div class="source"><a href="https://www.youtube.com/embed/7OJaNJdInVE?si=fpr3aaB_8CqEh-pD">https://www.youtube.com/embed/7OJaNJdInVE?si=fpr3aaB_8CqEh-pD</a></div></figure><figure id="15cfe5cc-60e4-8008-bddd-ebdbf57acbe8" class="image"><a href="tablet.gif"><img style="width:707.99169921875px" src="tablet.gif"/></a></figure><figure id="15cfe5cc-60e4-8012-a5cc-fe92bad53bbb" class="image"><a href="r.gif"><img style="width:707.99169921875px" src="r.gif"/></a></figure><figure id="15bfe5cc-60e4-8091-bce5-f59d18e0001d" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTcz/MDAxNzI0Njg2MDcwNjA0.mZsCVjtMwv_m2PJklzIIPS12d7stqtgRCeGi35nnBV8g._mhJfH-M5ieSHqCaZZzjDFhoB2EOmhb3-6EDfw1v8Ykg.GIF/17246836070.gif?type=w1"><img style="width:700px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTcz/MDAxNzI0Njg2MDcwNjA0.mZsCVjtMwv_m2PJklzIIPS12d7stqtgRCeGi35nnBV8g._mhJfH-M5ieSHqCaZZzjDFhoB2EOmhb3-6EDfw1v8Ykg.GIF/17246836070.gif?type=w1"/></a></figure><figure id="15bfe5cc-60e4-804b-b254-f14ab4b65bf9" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfOTYg/MDAxNzI0Njg2MDcwNjQy.KWvJTcptPDAUG8Eot2Z_A72UGt4tfgnmM444teZCYqgg.xe5r4BrpWI9sLbGH9GkBxTnSOCCvECfOTIHrI8InqWcg.JPEG/17246795030_Re.jpg?type=w1"><img style="width:700px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfOTYg/MDAxNzI0Njg2MDcwNjQy.KWvJTcptPDAUG8Eot2Z_A72UGt4tfgnmM444teZCYqgg.xe5r4BrpWI9sLbGH9GkBxTnSOCCvECfOTIHrI8InqWcg.JPEG/17246795030_Re.jpg?type=w1"/></a></figure><figure id="15bfe5cc-60e4-80ea-8d53-e77af717cce7" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTY3/MDAxNzI0Njg2MDcwNzE1.gd9aNws76Tk4VJegZh8ETBYxIZwdXfWwC39PWVIXULAg.Is37KXyix1nFP2O5ajrM-hgzhB6v1v9CQ6AF6bI8FE0g.GIF/17246795710_Re.gif?type=w1"><img style="width:700px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTY3/MDAxNzI0Njg2MDcwNzE1.gd9aNws76Tk4VJegZh8ETBYxIZwdXfWwC39PWVIXULAg.Is37KXyix1nFP2O5ajrM-hgzhB6v1v9CQ6AF6bI8FE0g.GIF/17246795710_Re.gif?type=w1"/></a></figure><figure id="15bfe5cc-60e4-8086-b5aa-f913d58c7ece" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTE1/MDAxNzI0Njg2MDcwNjYw.tCWxyx97r3d6jXpAxsCd9diymivFComcAV3ThUgXiOgg.arUDSG4ZHOy0jX4BoRb5jE7wHU7dXqjKvGOG9Xh4k4Yg.JPEG/17246796330_Re.jpg?type=w1"><img style="width:700px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTE1/MDAxNzI0Njg2MDcwNjYw.tCWxyx97r3d6jXpAxsCd9diymivFComcAV3ThUgXiOgg.arUDSG4ZHOy0jX4BoRb5jE7wHU7dXqjKvGOG9Xh4k4Yg.JPEG/17246796330_Re.jpg?type=w1"/></a></figure><figure id="15bfe5cc-60e4-80fb-8009-ee94d923115c" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTI1/MDAxNzI0Njg2MDcwNjUw.Cy6Lh9b_89TP7tnLpWt6HKJNUnBVE2RPq2R8S600gqAg.om3JhTF5lmahxeT3sAmp5MMOhT5pWPg4x26oMyxLgHUg.JPEG/17246837010_Re.jpg?type=w1"><img style="width:700px" src="https://blogfiles.pstatic.net/MjAyNDA4MjdfMTI1/MDAxNzI0Njg2MDcwNjUw.Cy6Lh9b_89TP7tnLpWt6HKJNUnBVE2RPq2R8S600gqAg.om3JhTF5lmahxeT3sAmp5MMOhT5pWPg4x26oMyxLgHUg.JPEG/17246837010_Re.jpg?type=w1"/></a></figure></details></li></ul><ul id="15bfe5cc-60e4-8004-8143-dff2aa7da191" class="toggle"><li><details open=""><summary><strong>Simple Cursor</strong></summary><figure id="15bfe5cc-60e4-80df-9327-feeff0e549da" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA5MDNfNDQg/MDAxNzI1MzE4OTkyNTQx._tpiYay6is9VtxdhfF7p6O3uSkIn5W34qKY2ysL_b50g.XbXAvtcKeQJIfRRMIXt_nVztU0s6MjuPu7RfoW1bA-0g.GIF/17246828160.gif?type=w1"><img style="width:480px" src="https://blogfiles.pstatic.net/MjAyNDA5MDNfNDQg/MDAxNzI1MzE4OTkyNTQx._tpiYay6is9VtxdhfF7p6O3uSkIn5W34qKY2ysL_b50g.XbXAvtcKeQJIfRRMIXt_nVztU0s6MjuPu7RfoW1bA-0g.GIF/17246828160.gif?type=w1"/></a></figure></details></li></ul><ul id="15bfe5cc-60e4-800b-b28d-d934651e2ad3" class="toggle"><li><details open=""><summary><strong>Character Cursor</strong></summary><div id="15cfe5cc-60e4-809a-8dca-d21931f2dd7f" class="column-list"><div id="15cfe5cc-60e4-802f-bbe1-ea5e303b1d29" style="width:31.25%" class="column"><figure id="15bfe5cc-60e4-80f2-b6f6-c6cac21eb05a" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA5MDNfMjYx/MDAxNzI1MzE5MDExODY4.1-tBHRMippmuD-9qcM_PQCyaSwqLSDRacfU1LwWqhYgg.2tOOEn20nSdJ93tKynoLuS5e0sjiRRO4IwMAgSoskpog.JPEG/17246818420_Re.jpg?type=w1"><img style="width:240px" src="https://blogfiles.pstatic.net/MjAyNDA5MDNfMjYx/MDAxNzI1MzE5MDExODY4.1-tBHRMippmuD-9qcM_PQCyaSwqLSDRacfU1LwWqhYgg.2tOOEn20nSdJ93tKynoLuS5e0sjiRRO4IwMAgSoskpog.JPEG/17246818420_Re.jpg?type=w1"/></a></figure></div><div id="15cfe5cc-60e4-801e-95ea-debda52f92dc" style="width:68.75%" class="column"><figure id="15bfe5cc-60e4-80f9-a41a-f64268b28d8a" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA5MDNfMTU3/MDAxNzI1MzE5MDE0Mjgw.mvWgZewZrqYMGdiMJxNRkSW8zwC5NVgy4K19q6-vLyog.ALKcEXE1p0TK3ZNpbgDHqq4t505pldCWzjnDQAQ-FV8g.JPEG/17246818190_Re.jpg?type=w1"><img style="width:192px" src="https://blogfiles.pstatic.net/MjAyNDA5MDNfMTU3/MDAxNzI1MzE5MDE0Mjgw.mvWgZewZrqYMGdiMJxNRkSW8zwC5NVgy4K19q6-vLyog.ALKcEXE1p0TK3ZNpbgDHqq4t505pldCWzjnDQAQ-FV8g.JPEG/17246818190_Re.jpg?type=w1"/></a></figure></div></div><figure id="15bfe5cc-60e4-80ac-bbb1-dda086412e28" class="image"><a href="https://blogfiles.pstatic.net/MjAyNDA5MDNfMTY3/MDAxNzI1MzE5MDUxNjk5.UagpqpBUXcU0IZDl6ZcyqCYJlX6ipZ7MmWIj4m8y_bUg.CpgX-OEE5JrQ254UeNqCCDGxjg6os07blF6n7ivfUQcg.GIF/17246833090.gif?type=w1"><img style="width:480px" src="https://blogfiles.pstatic.net/MjAyNDA5MDNfMTY3/MDAxNzI1MzE5MDUxNjk5.UagpqpBUXcU0IZDl6ZcyqCYJlX6ipZ7MmWIj4m8y_bUg.CpgX-OEE5JrQ254UeNqCCDGxjg6os07blF6n7ivfUQcg.GIF/17246833090.gif?type=w1"/></a></figure></details></li></ul><p id="15cfe5cc-60e4-80fe-986d-c948cfc58d8d" class="">
+</p><hr id="15cfe5cc-60e4-80a9-844e-faba3a9a4424"/><p id="15cfe5cc-60e4-8067-99ea-e2349d559e4d" class="">
+</p><blockquote id="15cfe5cc-60e4-8064-9564-c5820a639b3d" class="">For the mouse cursor, I will convert it into cur or ani (animated cursor) files and send them to you. If you prefer, I can also provide the original files.<br/><br/><br/><mark class="highlight-yellow_background"><strong>Quote &gt; Payment &gt; Line Art and Design &gt; Feedback &gt; Animation or Coloring &gt; Feedback &gt; Completion</strong></mark><strong><br/><br/><br/></strong>Please fill out the form below when making an inquiry to make the quoting process easier.<br/>Feel free to ask any additional questions.<br/></blockquote><h1 id="15cfe5cc-60e4-8036-939c-ee35fa831bd7" class="">📎Application Form📎</h1><ul id="15cfe5cc-60e4-8067-b057-fed1bff56e98" class="bulleted-list"><li style="list-style-type:disc"><strong>Character and Background Type / Composition (Pose) / + Motion</strong></li></ul><p id="15cfe5cc-60e4-8053-9e1e-dfeab84d0ca1" class="">Please specify the type and composition of the character illustration you want, and if needed, include any additional motion. If you&#x27;re not sure, describe the scene the character will be in. For motion, if you don’t have a specific one in mind, I can suggest several options</p><p id="15cfe5cc-60e4-806e-b505-c7e5ce8032f5" class=""><em>Example:</em></p><p id="15cfe5cc-60e4-80ad-9cdb-f46d7c0b2637" class=""><em><mark class="highlight-gray">Please create an animation of my character spitting out money, similar to the SD character in the example</mark></em></p><p id="15cfe5cc-60e4-8027-9bd8-f1ff797e42e2" class=""><em><mark class="highlight-gray">I want a fullscreen pixel animation. I want my character to be sitting in a room alone, using a computer. Please draw the pose of my character sitting in a chair and typing on the keyboard, viewed from the side. I’ve attached a reference photo for the camera angle. For the motion: I would like the character to blink, and I would like steam to rise from the cup on the desk</mark></em></p><ul id="15cfe5cc-60e4-80df-bfa6-ccf95f5a641b" class="bulleted-list"><li style="list-style-type:disc"><strong>Character, Background, Motion References</strong></li></ul><p id="15cfe5cc-60e4-807c-b437-fc879f28d2ab" class="">Please attach images of the character and background you want. If you don’t have specific images, providing something that closely resembles the character or composition will make it easier to understand. For motion references, it would be helpful if you could provide a YouTube video link with the exact time range (e.g., 3:34~3:40)</p><p id="15bfe5cc-60e4-802e-97a4-c92c83588081" class="">
+</p><p id="15bfe5cc-60e4-8034-8736-d7f7b2e38e7e" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
